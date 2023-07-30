@@ -1,4 +1,4 @@
-# cloth_sim
+# Cloth Simulation with Mass-Spring Model:
 This repo contains implementation of a cloth simulator using the mass-spring model. The cloth is represented by *n x n* mass particles on a grid and the  edges connecting these particles act as springs. There are 2 kinds of force acting on the cloth at given time; external and internal forces. External forces can be gravity, wind, collision etc while internal forces include stretch, shear, bend forces, compression etc. Each particle has 2 states, positions $x_i=[x_{i_x}, x_{i_y}, x_{i_z}]$ and velocity $v_i=[v_{i_x}, v_{i_y}, v_{i_z}]$. 
 
 The goal is to achieve the minimal energy state of the system. If $E(x)$ is the total energy acting on the particle, then negative of the gradient of this energy points us towards the steepest decent. Hence the force on the particle is given as: $$f(x)=-\frac{\partial E(x)}{\partial x}$$ For gravitational force, assuming the gravity to act along y direction and the acceleration due to gravity *g* is roughly equal to $9.8$, then the resulting force is given as:
@@ -19,4 +19,6 @@ Here, $f(x_n,v_n)$ is the sum of all acting forces (gravity, spring and damping)
 $$x_{n+1} = x_n + \Delta x $$
 $$v_{n+1} = v_n + \Delta v $$
 Here is the demo of our working mass-spring system for cloth simulation:
-![](output.mp4) 
+
+https://github.com/Shanthika/cloth_sim/assets/35603241/295a6ced-8b9b-4858-8c9c-baee077b02e2
+
