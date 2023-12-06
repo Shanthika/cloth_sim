@@ -7,7 +7,7 @@ $$=- [ \frac{\partial E_g}{\partial x_{i_{x}}}, \frac{\partial E_g}{\partial x_{
 
 
 For each particle $i$ on the grid, the forces exerted by particle $j \in \mathcal{N}$ where $\mathcal{N}$ are the neighbourhood particles of $i$ is given as:
-$$ f_i(x) = k(||x_i-x_j|| -L ) \frac{(x_i-x_j) } {||x_i-x_j||}$$
+$$f_i(x) = k(||x_i-x_j|| -L ) \frac{(x_i-x_j) } {||x_i-x_j||}$$
 
 $L$ is the rest length of the spring connecting particles $i$ and $j$ , $k$ is the spring constant and  $||.||$ is the Euclidean distance. We also have a damping force acting on each particle, that helps achieve stability of the system which is given as:
 $$d_i(x) = -k_d(v_i-v_j)$$ where $k_d$ is the damping coefficient. 
